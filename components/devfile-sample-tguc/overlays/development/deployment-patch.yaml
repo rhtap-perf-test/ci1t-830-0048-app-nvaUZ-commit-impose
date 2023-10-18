@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-tguc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0048-tenant/ci1t-830-0048-app/devfile-sample-tguc@sha256:dbb73dd1e08ddd2a5cce0a6c8f7d9a8e8545f58c5feab3abd4b852232a28772f
+        name: my-nodejs
+        resources: {}
+status: {}
